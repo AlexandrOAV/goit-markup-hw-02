@@ -1,19 +1,42 @@
-/* color text  */
-/* color web #4D5AE5 */ 
-/* color navigation, logo  #2E2F42 */
-/* color active navigation #404BBF */
-/* color text hero, batton #FFFFFF */
-/* color title h2, h3 #2E2F42 */
-/* color text site, address #434455 */
-/* color hover address #404BBF */
-/* logo futer #F4F4FD */
+
+
+
+
+
+
+
  /* text futer #E7E9FC */
 
  /* color text portfolio */
  /* text ul button #4D5AE5 */
-  /* text hover button #FFFFFF */
+  
   /* background-color button #4D5AE5 */
   /* background-color button hiver #404BBF */
   
 
-future color bac
+:root {
+  --text-color-site: color #434455; /* основний колір тексту сайту */
+--title-color-hhh: color #2E2F42; /* color title h2, h3*/
+--hero-color: color #FFFFFF; /* color text hero, batton  */
+--web-logo-color: color #4D5AE5; 
+--logo-nav-color: color #2E2F42;
+--nav-menu-color: color #2E2F42;
+--nav-menu-active-color: color #404BBF;
+--button-color: color #ffffff;
+--button-background: background-color #4D5AE5;
+--button-hover-background: background-color #404BBF;
+--color-hover-address: color #434455;
+--color-active-address: color #404BBF;
+--color-logo-futer: color #F4F4FD;
+--color-text-futer: color #E7E9FC;
+
+}
+
+/* Задаваання стилів */
+body {
+  color: var(--text-color-site);
+}
+.logo {
+  color: var(--web-logo-color);
+  background-color: var(--button-background);
+}
