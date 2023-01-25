@@ -15,28 +15,87 @@
   
 
 :root {
-  --text-color-site: color #434455; /* основний колір тексту сайту */
---title-color-hhh: color #2E2F42; /* color title h2, h3*/
---hero-color: color #FFFFFF; /* color text hero, batton  */
---web-logo-color: color #4D5AE5; 
---logo-nav-color: color #2E2F42;
---nav-menu-color: color #2E2F42;
---nav-menu-active-color: color #404BBF;
---button-color: color #ffffff;
---button-background: background-color #4D5AE5;
---button-hover-background: background-color #404BBF;
---color-hover-address: color #434455;
---color-active-address: color #404BBF;
---color-logo-futer: color #F4F4FD;
---color-text-futer: color #E7E9FC;
+  --text-color-site:  #434455; /* основний колір тексту сайту */
+--title-color-hhh:  #2E2F42; /* color title h2, h3*/
+--hero-color:  #FFFFFF; /* color text hero, batton  */
+--web-logo-color:  #4D5AE5; 
+--logo-nav-color:  #2E2F42;
+--nav-menu-color:  #2E2F42;
+--nav-menu-active-color:  #404BBF;
+--button-color:  #ffffff;
+--button-background:  #4D5AE5;
+--button-hover-background:  #404BBF;
+--hover-address-color:  #434455;
+--active-address-color:  #404BBF;
+--logo-futer-color:  #F4F4FD;
+--text--color:  #E7E9FC;
 
 }
 
 /* Задаваання стилів */
 body {
   color: var(--text-color-site);
+  font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.list {
+  list-style: none;
+}
+/* розмітка header */
+.header-pg .header-item-link{
+  font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--nav-menu-color);
+}
+.header-logo {
+  font-family: 'Raleway' sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--logo-nav-color);
 }
 .logo {
   color: var(--web-logo-color);
-  background-color: var(--button-background);
+}
+
+.header-item-link:hover, .header-item-link:focus {
+  color: var(--nav-menu-active-color)
+}
+.header-nav {
+  
+
+
+}
+
+
+
+
+
+.header-list {}
+
+.header-item {}
+
+
+.header-address {}
+
+.header-address-list {}
+
+.header-addres-item {}
+
+ 
+
+
 }
