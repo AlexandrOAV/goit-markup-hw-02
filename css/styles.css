@@ -1,21 +1,5 @@
-
-
-
-
-
-
-
- /* text futer #E7E9FC */
-
- /* color text portfolio */
- /* text ul button #4D5AE5 */
-  
-  /* background-color button #4D5AE5 */
-  /* background-color button hiver #404BBF */
-  
-
 :root {
-  --text-color-site:  #434455; /* основний колір тексту сайту */
+--text-color-site:  #434455; /* основний колір тексту сайту */
 --title-color-hhh:  #2E2F42; /* color title h2, h3*/
 --hero-color:  #FFFFFF; /* color text hero, batton  */
 --web-logo-color:  #4D5AE5; 
@@ -28,36 +12,22 @@
 --hover-address-color:  #434455;
 --active-address-color:  #404BBF;
 --logo-futer-color:  #F4F4FD;
---text--color:  #E7E9FC;
-
+--text-futer-color: #E7E9FC;
+--text-button-portfolio:#4D5AE5;
+--text-button-portfolio-active: #FFFFFF;
+--button-portfolio-activ: #404BBF;
 }
-
-/* Задаваання стилів */
-body {
-  color: var(--text-color-site);
-  font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
+/* Reset dot and underline */
 .list {
   list-style: none;
 }
-/* розмітка header */
-.header-pg .header-item-link{
-  font-family: 'Roboto' sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color:var(--nav-menu-color);
+.link {
+  text-decoration: none;
 }
-.header-logo {
-  font-family: 'Raleway' sans-serif;
-  font-style: normal;
+
+/* hedader */
+.link-logo {
+  font-family: 'Raleway';
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -66,36 +36,36 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-nav-color);
-}
+    }
+
 .logo {
-  color: var(--web-logo-color);
+  color: #4D5AE5;
 }
 
-.header-item-link:hover, .header-item-link:focus {
-  color: var(--nav-menu-active-color)
+.menu-link {
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--nav-menu-color)
 }
-.header-nav {
-  
-
-
+.menu-link:hover, :focus {
+  color:var(--nav-menu-active-color);
+}
+.mail-link, .tel-link {
+  font-family: 'Roboto';
+  font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+      letter-spacing: 0.02em;  
+    color:var(--hover-address-color);
 }
 
-
-
-
-
-.header-list {}
-
-.header-item {}
-
-
-.header-address {}
-
-.header-address-list {}
-
-.header-addres-item {}
-
- 
-
-
+.tel-link:hover, :focus {
+  color:var(--active-address-color);
+}
+.mail-link:hover, :focus {
+  color: var(--active-address-color);
 }
