@@ -1,7 +1,6 @@
 :root {
 --text-color-site:  #434455; /* основний колір тексту сайту */
 --title-color-hhh:  #2E2F42; /* color title h2, h3*/
---hero-color:  #FFFFFF; /* color text hero, batton  */
 --web-logo-color:  #4D5AE5; 
 --logo-nav-color:  #2E2F42;
 --nav-menu-color:  #2E2F42;
@@ -24,10 +23,17 @@
 .link {
   text-decoration: none;
 }
+body {
+font-family: 'Roboto';
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--text-color-site);
+}
 
 /* hedader */
 .link-logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -48,24 +54,55 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
-color: var(--nav-menu-color)
+color: var(--nav-menu-color);
 }
-.menu-link:hover, :focus {
+.menu-link:hover, 
+.menu-link:focus {
   color:var(--nav-menu-active-color);
 }
 .mail-link, .tel-link {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-      letter-spacing: 0.02em;  
-    color:var(--hover-address-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;  
+  color:var(--hover-address-color);
 }
 
-.tel-link:hover, :focus {
+.tel-link:hover,
+.tel-link:focus {
   color:var(--active-address-color);
 }
-.mail-link:hover, :focus {
+.mail-link:hover, 
+.tel-link:focus {
   color: var(--active-address-color);
+}
+
+/* hero */
+.hero {
+  background-color: #2E2F42;
+}
+.hero-caption {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+.hero-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color:var(--button-color);
+  background-color: var(--button-background);
+}
+.hero-btn:hover, :focus {
+  background-color: var(--button-hover-background);
+
 }
