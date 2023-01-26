@@ -16,6 +16,19 @@
 --text-button-portfolio-active: #FFFFFF;
 --button-portfolio-activ: #404BBF;
 }
+/* Скриття заголовків */
+ .visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+} 
 /* Reset dot and underline */
 .list {
   list-style: none;
@@ -24,7 +37,7 @@
   text-decoration: none;
 }
 body {
-font-family: 'Roboto';
+font-family: 'Roboto', sans-serif;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -38,7 +51,6 @@ color: var(--text-color-site);
   font-size: 18px;
   line-height: 1.33;
   display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-nav-color);
@@ -102,7 +114,17 @@ color: var(--nav-menu-color);
   color:var(--button-color);
   background-color: var(--button-background);
 }
-.hero-btn:hover, :focus {
+.hero-btn:hover, 
+.hero-btn:focus {
   background-color: var(--button-hover-background);
-
 }
+
+/* section the best */
+.best-list-hd {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em; 
+    color: var(--title-color-hhh);
+}
+/* Section 3 What are we doing */
