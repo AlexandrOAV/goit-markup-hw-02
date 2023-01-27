@@ -14,6 +14,7 @@
 --text-futer-color: #E7E9FC;
 --text-button-portfolio:#4D5AE5;
 --text-button-portfolio-active: #FFFFFF;
+--background-radio-button:#F4F4FD; 
 --button-portfolio-activ: #404BBF;
 }
 /* Скриття заголовків */
@@ -128,3 +129,62 @@ color: var(--nav-menu-color);
     color: var(--title-color-hhh);
 }
 /* Section 3 What are we doing */
+.job-heading, .team-heading {
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;  
+    color:var(--title-color-hhh);
+}
+/* section our team */
+.team-item-heading {
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+     text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--title-color-hhh);
+}
+.team-item-text {
+  text-align: center;
+}
+ /* futer */
+ .last {
+  background-color:#2E2F42;
+ }
+ .last>.link-logo {
+color: #ffffff;
+ }
+ .last-text {
+  color: var(--text-futer-color);
+ }
+
+ /* PAGE PORTFOLIO */
+ .radio-filter {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--text-button-portfolio);
+  background-color:var(--background-radio-button);
+ }
+ .radio-filter:hover, .radio-filter:focus {
+color: var(--text-button-portfolio-active);
+background-color: var(--button-portfolio-activ);
+ }
+ .work-item-header {
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-color-hhh);
+ }
+ .work-item-text {
+  
+ }
