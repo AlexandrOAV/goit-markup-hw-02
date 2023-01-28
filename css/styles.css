@@ -20,7 +20,7 @@
 --button-portfolio-activ: #404BBF;
 --background-color-herofut: #2E2F42;
 --background-section-team:#F4F4FD;
---background-color-portfolio-section:#E5E5E5;
+
 }
 /* Скриття заголовків */
  .visually-hidden {
@@ -108,6 +108,7 @@ color: var(--nav-menu-color);
   letter-spacing: 0.04em;
   color:var(--button-color);
   background-color: var(--button-background);
+  cursor: pointer;
 }
 .hero-btn:hover, 
 .hero-btn:focus {
@@ -166,9 +167,7 @@ color:var(--text-hero);
  }
 
  /* PAGE PORTFOLIO */
- .section-portfolio {
-  background-color: var(--background-color-portfolio-section);
- }
+
  .radio-filter {
   font-weight: 500;
   line-height: 1.5;
@@ -176,6 +175,7 @@ color:var(--text-hero);
   letter-spacing: 0.04em;
   color: var(--text-button-portfolio);
   background-color:var(--background-radio-button);
+  cursor: pointer;
  }
  .radio-filter:hover, .radio-filter:focus {
   color: var(--text-button-portfolio-active);
