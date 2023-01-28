@@ -1,11 +1,13 @@
 :root {
 --text-color-site:  #434455; /* основний колір тексту сайту */
+--background-site: #ffffff; 
 --title-color-hhh:  #2E2F42; /* color title h2, h3*/
 --web-logo-color:  #4D5AE5; 
 --logo-nav-color:  #2E2F42;
 --nav-menu-color:  #2E2F42;
 --nav-menu-active-color:  #404BBF;
 --button-color:  #ffffff;
+--text-hero: #ffffff;
 --button-background:  #4D5AE5;
 --button-hover-background:  #404BBF;
 --hover-address-color:  #434455;
@@ -16,6 +18,9 @@
 --text-button-portfolio-active: #FFFFFF;
 --background-radio-button:#F4F4FD; 
 --button-portfolio-activ: #404BBF;
+--background-color-herofut: #2E2F42;
+--background-section-team:#F4F4FD;
+--background-color-portfolio-section:#E5E5E5;
 }
 /* Скриття заголовків */
  .visually-hidden {
@@ -40,9 +45,8 @@
 body {
 font-family: 'Roboto', sans-serif;
 font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
 color: var(--text-color-site);
+background-color: var(--background-site);
 }
 
 /* hedader */
@@ -51,20 +55,17 @@ color: var(--text-color-site);
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  display: flex;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo-nav-color);
     }
 
 .logo {
-  color: #4D5AE5;
+  color: var(--web-logo-color);
 }
 
 .menu-link {
-font-family: 'Roboto', sans-serif;
 font-weight: 500;
-font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--nav-menu-color);
@@ -74,10 +75,8 @@ color: var(--nav-menu-color);
   color:var(--nav-menu-active-color);
 }
 .mail-link, .tel-link {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 1.5;
+   font-style: normal;
+   line-height: 1.5;
   letter-spacing: 0.02em;  
   color:var(--hover-address-color);
 }
@@ -93,24 +92,19 @@ color: var(--nav-menu-color);
 
 /* hero */
 .hero {
-  background-color: #2E2F42;
+  background-color:var(--background-color-herofut);
 }
 .hero-caption {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color:var(--text-hero);
 }
 .hero-btn {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.04em;
   color:var(--button-color);
   background-color: var(--button-background);
@@ -128,9 +122,14 @@ color: var(--nav-menu-color);
     letter-spacing: 0.02em; 
     color: var(--title-color-hhh);
 }
+.best-item-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 /* Section 3 What are we doing */
 .job-heading, .team-heading {
-  font-weight: 700;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -139,52 +138,56 @@ color: var(--nav-menu-color);
     color:var(--title-color-hhh);
 }
 /* section our team */
+.team {
+  background-color: var(--background-section-team);
+}
 .team-item-heading {
   font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-     text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--title-color-hhh);
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-color-hhh);
 }
 .team-item-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   text-align: center;
 }
  /* futer */
  .last {
-  background-color:#2E2F42;
+  background-color: var(--background-color-herofut);
  }
  .last>.link-logo {
-color: #ffffff;
+color:var(--text-hero);
  }
  .last-text {
   color: var(--text-futer-color);
  }
 
  /* PAGE PORTFOLIO */
+ .section-portfolio {
+  background-color: var(--background-color-portfolio-section);
+ }
  .radio-filter {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--text-button-portfolio);
   background-color:var(--background-radio-button);
  }
  .radio-filter:hover, .radio-filter:focus {
-color: var(--text-button-portfolio-active);
-background-color: var(--button-portfolio-activ);
+  color: var(--text-button-portfolio-active);
+  background-color: var(--button-portfolio-activ);
  }
  .work-item-header {
   font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--title-color-hhh);
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color-hhh);
  }
  .work-item-text {
-  
- }
+  color: var(--text-color-site);
+  }
